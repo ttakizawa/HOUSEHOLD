@@ -17,7 +17,8 @@ def signup(data: {}) -> User:
     db.session.add(new_user)
     db.session.commit()
     return user
-  except SQLAlchemyError:
+  except SQLAlchemyError as e:
+    print(e)
     raise SQLAlchemyError
 
 

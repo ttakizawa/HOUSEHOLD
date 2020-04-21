@@ -4,7 +4,7 @@ from flask_login import LoginManager
 
 app = Flask(__name__)
 
-app.secert_key = "super secret key"
+app.secret_key = "super secret key"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
